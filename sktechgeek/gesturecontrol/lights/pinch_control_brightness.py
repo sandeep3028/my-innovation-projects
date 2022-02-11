@@ -9,6 +9,7 @@ cap = cv2.VideoCapture(0)
 cap.set(3, 1280)
 cap.set(4, 720)
 hand_tracking = hand.HandTracking()
+# payload for philips hue
 payload = {'bri': 250}
 level_bar = 400
 level_percentage = 0
