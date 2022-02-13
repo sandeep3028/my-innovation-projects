@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c706ea24-5433-45b0-b2d1-d7edb5e019b0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sktechgeek/gesturecontrol/bodypose/Sidebar/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sktechgeek/gesturecontrol/bodypose/Sidebar/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sktechgeek/gesturecontrol/bodypose/Sidebar/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sktechgeek/gesturecontrol/bodypose/Sidebar/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sktechgeek/gesturecontrol/bodypose/Sidebar/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sktechgeek/gesturecontrol/bodypose/excercise_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/sktechgeek/gesturecontrol/bodypose/excercise_app.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,11 +57,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sktechgeek/gesturecontrol/bodypose/excercise_app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="135" column="50" lean-forward="true" selection-start-line="135" selection-start-column="50" selection-end-line="135" selection-end-column="50" />
+            <state relative-caret-position="254">
+              <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1006029626/cv2/cv2/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="10263" column="4" selection-start-line="10263" selection-start-column="4" selection-end-line="10263" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -72,9 +87,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>lmlist</find>
+      <find>menubar</find>
     </findStrings>
     <replaceStrings>
       <replace>lm_list_pose</replace>
+      <replace>top_menu</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -130,12 +147,6 @@
               <item name="gesturecontrol" type="462c0819:PsiDirectoryNode" />
               <item name="bodypose" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="my-innovation-projects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-innovation-projects" type="462c0819:PsiDirectoryNode" />
-              <item name="sktechgeek" type="462c0819:PsiDirectoryNode" />
-              <item name="tracking" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -147,6 +158,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\sande\Documents\GitHub\my-innovation-projects\sktechgeek\gesturecontrol\bodypose\TopMenu" />
       <recent name="C:\Users\sande\Documents\GitHub\my-innovation-projects\sktechgeek\gesturecontrol\bodypose" />
     </key>
   </component>
@@ -260,7 +272,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35496688" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19470198" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -308,10 +320,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1006029626/cv2/cv2/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="10263" column="4" selection-start-line="10263" selection-start-column="4" selection-end-line="10263" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sktechgeek/gesturecontrol/bodypose/excercise_app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="135" column="50" lean-forward="true" selection-start-line="135" selection-start-column="50" selection-end-line="135" selection-end-column="50" />
+        <state relative-caret-position="254">
+          <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

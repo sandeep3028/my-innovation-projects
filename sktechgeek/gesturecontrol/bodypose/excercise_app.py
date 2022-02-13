@@ -22,7 +22,7 @@ bicepsCurlCounter = 0
 shoulderPressCounter = 0
 pushUpCounter = 0
 
-headerX = 200
+headerX = 0
 headerY = 200
 
 exercise = 'notselected'
@@ -38,10 +38,10 @@ def get_image_list(folder):
     return overlay_list
 
 
-sidebar_image_list = get_image_list('Sidebar')
+top_menu_image_list = get_image_list('TopMenu')
 counter_image_list = get_image_list('Count')
 
-sidebar = sidebar_image_list[0]
+top_menu = top_menu_image_list[0]
 countImage = counter_image_list[0]
 
 cap = cv2.VideoCapture(0)
@@ -66,7 +66,7 @@ while cap.isOpened():
                 shoulderPressSelected = False
                 counter, squatsCounter, pushUpCounter, bicepsCurlCounter, shoulderPressCounter = 0, 0, 0, 0, 0
                 exercise = 'Push Up'
-                sidebar = sidebar_image_list[1]
+                top_menu = top_menu_image_list[1]
             elif 800 < x < 950:
                 pushUpSelected = False
                 squatsSelected = True
@@ -74,7 +74,7 @@ while cap.isOpened():
                 shoulderPressSelected = False
                 counter, squatsCounter, pushUpCounter, bicepsCurlCounter, shoulderPressCounter = 0, 0, 0, 0, 0
                 exercise = 'Squats'
-                sidebar = sidebar_image_list[2]
+                top_menu = top_menu_image_list[2]
             elif 1000 < x < 1150:
                 pushUpSelected = False
                 squatsSelected = False
@@ -82,15 +82,15 @@ while cap.isOpened():
                 shoulderPressSelected = False
                 counter, squatsCounter, pushUpCounter, bicepsCurlCounter, shoulderPressCounter = 0, 0, 0, 0, 0
                 exercise = 'Bicep Curl'
-                sidebar = sidebar_image_list[3]
-            elif 1180 < x < 1280:
+                top_menu = top_menu_image_list[3]
+            elif 1160 < x < 1280:
                 pushUpSelected = False
                 squatsSelected = False
                 bicepsCurlSelected = False
                 shoulderPressSelected = True
                 counter, squatsCounter, pushUpCounter, bicepsCurlCounter, shoulderPressCounter = 0, 0, 0, 0, 0
                 exercise = 'Shoulder Press'
-                sidebar = sidebar_image_list[4]
+                top_menu = top_menu_image_list[4]
 
         cv2.circle(image, (x, y), 10, (255, 0, 0), cv2.FILLED)
 
@@ -140,12 +140,13 @@ while cap.isOpened():
                     shoulderPressDetected = False
 
     if exercise != 'notselected':
-        cv2.putText(image, exercise+" : " + str(counter), (headerX, headerY), cv2.FONT_HERSHEY_PLAIN, 5, (0, 0, 0),
-                5)
+        cv2.putText(image, exercise+" : " + str(counter), (headerX, headerY), cv2.FONT_HERSHEY_PLAIN, 4, (0, 0, 0),
+                8)
         if counter < 6:
             countImage = counter_image_list[counter]
-            image[125:225, 0: 100] = countImage
-    image[0:125, 0:1280] = sidebar
+            # image[125:225, 0: 100] = countImage
+            # image[125:225, 400: 500] = countImage
+    image[0:125, 0:1280] = top_menu
 
     cv2.imshow("Excercise App", image)
 
