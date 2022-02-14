@@ -23,6 +23,22 @@ class HandTracking():
                 self.mpDraw.draw_landmarks(image, my_hand, self.mpHands.HAND_CONNECTIONS)
         return lm_list, image
 
+    @staticmethod
+    def get_gesture(lm_list):
+        gesture = ''
+        if len(lm_list) != 0:
+            if lm_list[20][2] < lm_list[20 - 2][2] and lm_list[16][2] < lm_list[16 - 2][2] and lm_list[12][2] < \
+                    lm_list[12 - 2][
+                        2] and lm_list[8][2] < lm_list[8 - 2][2] and lm_list[4][1] < lm_list[4 - 1][1]:
+                gesture = 'palm'
+            elif lm_list[20][2] > lm_list[20 - 2][2] and lm_list[16][2] > lm_list[16 - 2][2] and lm_list[12][2] > \
+                    lm_list[12 - 2][
+                        2] and lm_list[8][2] > lm_list[8 - 2][2] and lm_list[4][1] > lm_list[4 - 1][1]:
+                gesture = 'upward_fist'
+            elif lm_list[8][2] > lm_list[0][2]:
+                gesture = 'straight_fist'
+        return gesture
+
 
 def main():
     cap = cv2.VideoCapture(0)
