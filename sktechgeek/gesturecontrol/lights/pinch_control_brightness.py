@@ -3,6 +3,7 @@ import sktechgeek.gesturecontrol.lights.hue as hue
 import cv2
 import math
 import numpy as np
+import sys
 
 
 cap = cv2.VideoCapture(0)
@@ -13,6 +14,15 @@ hand_tracking = hand.HandTracking()
 payload = {'bri': 250}
 level_bar = 400
 level_percentage = 0
+
+bulb_id = 5
+show = 'yes'
+
+if len(sys.argv) != 3:
+    print('Bulb id and Frame show args are mandatory')
+    sys.exit()
+bulb_id = int(sys.argv[1])
+show = sys.argv[2]
 
 while cap.isOpened():
     success, image = cap.read()
@@ -52,8 +62,9 @@ while cap.isOpened():
     cv2.putText(image, str(int(level_percentage)) + '%', (100, int(level_bar)), cv2.FONT_HERSHEY_PLAIN, 2,
                 (0, 255, 0), 2)
 
-    cv2.imshow("Pinch Control", image)
-    hue.set_lights('5', payload)
+    if show != 'no':
+        cv2.imshow("Pinch Control", image)
+    hue.set_lights(bulb_id, payload)
 
     cv2.waitKey(1)
 
