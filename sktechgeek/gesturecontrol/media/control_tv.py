@@ -1,10 +1,18 @@
 import sktechgeek.tracking.hand as hand
 import paho.mqtt.publish as publish
 import cv2
+import sys
 
 hand_tracking = hand.HandTracking()
 cap = cv2.VideoCapture(0)
 playPressed = False
+
+show = 'yes'
+
+if len(sys.argv) != 2:
+    print('Frame show arg is mandatory')
+    sys.exit()
+show = sys.argv[1]
 
 broker = 'homeassistant'
 topic = 'home-assistant/media/options'
@@ -29,5 +37,6 @@ while cap.isOpened():
                     (0, 0, 0), 3)
         publish.single(topic, 'stop', hostname=broker, auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
 
-    cv2.imshow("Media Control", image)
+    if show != 'no':
+        cv2.imshow("Media Control", image)
     cv2.waitKey(1)
