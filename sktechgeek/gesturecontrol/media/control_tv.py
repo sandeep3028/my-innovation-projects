@@ -45,14 +45,14 @@ while cap.isOpened():
             cv2.putText(image, "Pause", (20, 70), cv2.FONT_HERSHEY_PLAIN, 3,
                     (0, 0, 0), 3)
             publish.single(topic, 'pause', hostname=broker, auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
-    elif gesture == 'straight_fist':
-        if not stop:
-            play = False
-            pause = False
-            stop = True
-            cv2.putText(image, "Stop", (20, 70), cv2.FONT_HERSHEY_PLAIN, 3,
-                    (0, 0, 0), 3)
-            publish.single(topic, 'stop', hostname=broker, auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
+    # elif gesture == 'straight_fist':
+    #     if not stop:
+    #         play = False
+    #         pause = False
+    #         stop = True
+    #         cv2.putText(image, "Stop", (20, 70), cv2.FONT_HERSHEY_PLAIN, 3,
+    #                 (0, 0, 0), 3)
+    #         publish.single(topic, 'stop', hostname=broker, auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
 
     if show != 'no':
         cv2.imshow("Media Control", image)
