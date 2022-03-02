@@ -15,7 +15,8 @@ if len(sys.argv) != 2:
     sys.exit()
 show = sys.argv[1]
 
-broker = 'homeassistant'
+#broker = 'homeassistant'
+broker = '192.168.0.199'
 topic = 'home-assistant/media/options'
 # topic = 'home-assistant/media/opt'
 
