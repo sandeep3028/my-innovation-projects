@@ -22,8 +22,10 @@ bicepsCurlCounter = 0
 shoulderPressCounter = 0
 pushUpCounter = 0
 
-headerX = 0
-headerY = 200
+labelWidth = 500
+
+headerX = 10
+headerY = 180
 
 exercise = 'notselected'
 counter = 0
@@ -66,6 +68,7 @@ while cap.isOpened():
                 shoulderPressSelected = False
                 counter, squatsCounter, pushUpCounter, bicepsCurlCounter, shoulderPressCounter = 0, 0, 0, 0, 0
                 exercise = 'Push Up'
+                labelWidth = 330
                 top_menu = top_menu_image_list[1]
             elif 800 < x < 950:
                 pushUpSelected = False
@@ -74,6 +77,7 @@ while cap.isOpened():
                 shoulderPressSelected = False
                 counter, squatsCounter, pushUpCounter, bicepsCurlCounter, shoulderPressCounter = 0, 0, 0, 0, 0
                 exercise = 'Squats'
+                labelWidth = 300
                 top_menu = top_menu_image_list[2]
             elif 1000 < x < 1150:
                 pushUpSelected = False
@@ -82,6 +86,7 @@ while cap.isOpened():
                 shoulderPressSelected = False
                 counter, squatsCounter, pushUpCounter, bicepsCurlCounter, shoulderPressCounter = 0, 0, 0, 0, 0
                 exercise = 'Bicep Curl'
+                labelWidth = 380
                 top_menu = top_menu_image_list[3]
             elif 1160 < x < 1280:
                 pushUpSelected = False
@@ -90,6 +95,7 @@ while cap.isOpened():
                 shoulderPressSelected = True
                 counter, squatsCounter, pushUpCounter, bicepsCurlCounter, shoulderPressCounter = 0, 0, 0, 0, 0
                 exercise = 'Shoulder Press'
+                labelWidth = 500
                 top_menu = top_menu_image_list[4]
 
         cv2.circle(image, (x, y), 10, (255, 0, 0), cv2.FILLED)
@@ -140,8 +146,9 @@ while cap.isOpened():
                     shoulderPressDetected = False
 
     if exercise != 'notselected':
-        cv2.putText(image, exercise+" : " + str(counter), (headerX, headerY), cv2.FONT_HERSHEY_PLAIN, 4, (0, 0, 0),
-                8)
+        cv2.rectangle(image, (0, 100), (labelWidth, 200), (0, 0, 0), cv2.FILLED)
+        cv2.putText(image, exercise+" : " + str(counter), (headerX, headerY), cv2.FONT_HERSHEY_PLAIN, 3, (0, 0, 255),
+                6)
         if counter < 6:
             countImage = counter_image_list[counter]
             # image[125:225, 0: 100] = countImage

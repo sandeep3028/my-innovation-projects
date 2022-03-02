@@ -27,7 +27,23 @@ class HandTracking():
     def get_gesture(lm_list):
         gesture = ''
         if len(lm_list) != 0:
-            if lm_list[20][2] < lm_list[20 - 2][2] and lm_list[16][2] < lm_list[16 - 2][2] and lm_list[12][2] < \
+            if lm_list[8][2] < lm_list[8 - 2][2] and lm_list[20][2] > lm_list[20 - 2][2] and lm_list[16][2] > \
+                    lm_list[16 - 2][2] and lm_list[12][2] > lm_list[12 - 2][2]:
+                gesture = 'index'
+            elif lm_list[8][2] > lm_list[8 - 2][2] and lm_list[20][2] < lm_list[20 - 2][2] and lm_list[16][2] > \
+                    lm_list[16 - 2][2] and lm_list[12][2] > lm_list[12 - 2][2]:
+                gesture = 'pinky'
+            elif lm_list[8][2] < lm_list[8 - 2][2] and lm_list[20][2] < lm_list[20 - 2][2] and lm_list[16][2] > \
+                    lm_list[16 - 2][2] and lm_list[12][2] > lm_list[12 - 2][2]:
+                gesture = 'yo'
+            elif lm_list[8][2] < lm_list[8 - 2][2] and lm_list[12][2] < lm_list[12 - 2][2] and lm_list[20][2] > \
+                    lm_list[20 - 2][2] and lm_list[16][2] > lm_list[16 - 2][2]:
+                gesture = 'index_middle'
+            elif lm_list[4][2] < lm_list[4-2][2] and lm_list[19][2] > lm_list[0][2]:
+                gesture = 'thumbs_up'
+            elif lm_list[4][2] > lm_list[4 - 2][2] and lm_list[19][2] < lm_list[0][2]:
+                gesture = 'thumbs_down'
+            elif lm_list[20][2] < lm_list[20 - 2][2] and lm_list[16][2] < lm_list[16 - 2][2] and lm_list[12][2] < \
                     lm_list[12 - 2][
                         2] and lm_list[8][2] < lm_list[8 - 2][2] and lm_list[4][1] < lm_list[4 - 1][1]:
                 gesture = 'palm'

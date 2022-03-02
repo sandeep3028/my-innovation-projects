@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c706ea24-5433-45b0-b2d1-d7edb5e019b0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sktechgeek/gesturecontrol/bodypose/excercise_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/sktechgeek/gesturecontrol/bodypose/excercise_app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sktechgeek/gesturecontrol/media/control_tv.py" beforeDir="false" afterPath="$PROJECT_DIR$/sktechgeek/gesturecontrol/media/control_tv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sktechgeek/tracking/hand.py" beforeDir="false" afterPath="$PROJECT_DIR$/sktechgeek/tracking/hand.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,29 +14,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sktechgeek/gesturecontrol/lights/pinch_control_brightness.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="20" />
+            <state relative-caret-position="397">
+              <caret line="48" column="36" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="36" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sktechgeek/tracking/__init__.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sktechgeek/gesturecontrol/media/control_tv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="55" lean-forward="true" selection-start-line="47" selection-end-line="55" />
+            <state relative-caret-position="312">
+              <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -42,12 +40,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sktechgeek/gesturecontrol/bodypose/excercise_app.py">
+        <entry file="file://$PROJECT_DIR$/sktechgeek/tracking/hand.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="91">
+              <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
               <folding>
-                <element signature="e#0#39#0" expanded="true" />
+                <element signature="e#0#22#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,9 +62,9 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lmlist</find>
       <find>menubar</find>
       <find>lmList</find>
+      <find>lmlist</find>
     </findStrings>
     <replaceStrings>
       <replace>lm_list_pose</replace>
@@ -81,18 +79,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/sktechgeek/tracking/pose.py" />
+        <option value="$PROJECT_DIR$/sktechgeek/gesturecontrol/lights/pinch_control_brightness.py" />
         <option value="$PROJECT_DIR$/sktechgeek/gesturecontrol/bodypose/excercise_app.py" />
         <option value="$PROJECT_DIR$/sktechgeek/tracking/hand.py" />
-        <option value="$PROJECT_DIR$/sktechgeek/gesturecontrol/lights/pinch_control_brightness.py" />
         <option value="$PROJECT_DIR$/sktechgeek/gesturecontrol/media/control_tv.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
-    <option name="width" value="2762" />
-    <option name="height" value="1810" />
+    <option name="x" value="-16" />
+    <option name="y" value="-16" />
+    <option name="width" value="3872" />
+    <option name="height" value="2112" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -127,6 +125,13 @@
               <item name="sktechgeek" type="462c0819:PsiDirectoryNode" />
               <item name="gesturecontrol" type="462c0819:PsiDirectoryNode" />
               <item name="bodypose" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-innovation-projects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-innovation-projects" type="462c0819:PsiDirectoryNode" />
+              <item name="sktechgeek" type="462c0819:PsiDirectoryNode" />
+              <item name="gesturecontrol" type="462c0819:PsiDirectoryNode" />
+              <item name="lights" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-innovation-projects" type="b2602c69:ProjectViewProjectNode" />
@@ -170,7 +175,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.excercise_app">
+  <component name="RunManager" selected="Python.control_tv">
     <configuration name="control_tv" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="my-innovation-projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -263,8 +268,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.excercise_app" />
         <item itemvalue="Python.control_tv" />
+        <item itemvalue="Python.excercise_app" />
         <item itemvalue="Python.pinch_control_brightness" />
         <item itemvalue="Python.pose" />
       </list>
@@ -287,47 +292,49 @@
     <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21115242" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3063197" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.17350994" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3152318" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3063197" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.11523179" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python38/Lib/site-packages/mediapipe/python/solutions/pose.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="113" column="6" selection-start-line="113" selection-start-column="6" selection-end-line="113" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sktechgeek/tracking/pose.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-61">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1006029626/cv2/cv2/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="10257" column="25" lean-forward="true" selection-start-line="10257" selection-start-column="25" selection-end-line="10257" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -338,36 +345,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sktechgeek/gesturecontrol/lights/pinch_control_brightness.py">
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2018.3/system/python_stubs/-1006029626/cv2/cv2/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="10621" column="4" selection-start-line="10621" selection-start-column="4" selection-end-line="10621" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sktechgeek/tracking/hand.py">
+    <entry file="file://$PROJECT_DIR$/sktechgeek/tracking/pose.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+        <state relative-caret-position="525">
+          <caret line="21" column="53" lean-forward="true" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/sktechgeek/gesturecontrol/bodypose/excercise_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sktechgeek/tracking/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/sktechgeek/gesturecontrol/bodypose/excercise_app.py">
+    <entry file="file://$PROJECT_DIR$/sktechgeek/tracking/hand.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="91">
+          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sktechgeek/gesturecontrol/lights/pinch_control_brightness.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="48" column="36" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="36" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -376,8 +400,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sktechgeek/gesturecontrol/media/control_tv.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="55" lean-forward="true" selection-start-line="47" selection-end-line="55" />
+        <state relative-caret-position="312">
+          <caret line="32" column="16" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
