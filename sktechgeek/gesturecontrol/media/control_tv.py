@@ -39,84 +39,47 @@ while cap.isOpened():
     lm_list, image = hand_tracking.get_landmarks(image)
     gesture = hand_tracking.get_gesture(lm_list)
     print(gesture)
-    # if gesture == 'yo':
-    #     if not power:
-    #         power = True
-    #         publish.single(topic, 'power', hostname=broker,
-    #                        auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
-    # elif gesture == 'pinky':
-    #     if not back:
-    #         back = True
-    #         publish.single(topic, 'back', hostname=broker,
-    #                        auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
-    #
-    # elif gesture == 'index_middle':
-    #     h, w, c = image.shape
-    #     if w - lm_list[8][1] <= volume_up_x_buffer:
-    #         print('forward')
-    #         publish.single(topic, 'forward', hostname=broker,
-    #                        auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
-    #     elif w - lm_list[8][1] >= volume_down_x_buffer:
-    #         print('rewind')
-    #         publish.single(topic, 'rewind', hostname=broker,
-    #                        auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
-    #     time.sleep(sleep_time)
-    # elif gesture == 'index':
-    #     h, w, c = image.shape
-    #     if w - lm_list[8][1] <= right_x_buffer:
-    #         print('right')
-    #         publish.single(topic, 'right', hostname=broker,
-    #                        auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
-    #     elif w - lm_list[8][1] >= left_x_buffer:
-    #         print('left')
-    #         publish.single(topic, 'left', hostname=broker,
-    #                        auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
-    #     time.sleep(sleep_time)
-    # elif gesture == 'thumbs_up':
-    #     publish.single(topic, 'volume_up', hostname=broker,
-    #                    auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
-    #     time.sleep(sleep_time)
-    # elif gesture == 'thumbs_down':
-    #     publish.single(topic, 'volume_down', hostname=broker,
-    #                    auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
-    #     time.sleep(sleep_time)
-    # elif gesture == 'palm':
-    #     if not play:
-    #         play = True
-    #         pause = False
-    #         stop = False
-    #         cv2.putText(image, "Play", (20, 70), cv2.FONT_HERSHEY_PLAIN, 3,
-    #                     (0, 0, 0), 3)
-    #         publish.single(topic, 'play', hostname=broker, auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
-    # elif gesture == 'upward_fist':
-    #     if not pause:
-    #         play = False
-    #         pause = True
-    #         stop = False
-    #         cv2.putText(image, "Pause", (20, 70), cv2.FONT_HERSHEY_PLAIN, 3,
-    #                     (0, 0, 0), 3)
-    #         publish.single(topic, 'pause', hostname=broker, auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
-
-    if gesture == 'index':
-        publish.single(topic, 'forward', hostname=broker,
+    if gesture == 'yo':
+        if not power:
+            power = True
+            publish.single(topic, 'power', hostname=broker,
                            auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
-        time.sleep(sleep_time)
+    elif gesture == 'pinky':
+        if not back:
+            back = True
+            publish.single(topic, 'back', hostname=broker,
+                           auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
 
     elif gesture == 'index_middle':
-        publish.single(topic, 'rewind', hostname=broker,
+        h, w, c = image.shape
+        if w - lm_list[8][1] <= volume_up_x_buffer:
+            print('forward')
+            publish.single(topic, 'forward', hostname=broker,
+                           auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
+        elif w - lm_list[8][1] >= volume_down_x_buffer:
+            print('rewind')
+            publish.single(topic, 'rewind', hostname=broker,
                            auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
         time.sleep(sleep_time)
-
-    elif gesture == 'index_middle_ring':
+    elif gesture == 'index':
+        h, w, c = image.shape
+        if w - lm_list[8][1] <= right_x_buffer:
+            print('right')
+            publish.single(topic, 'right', hostname=broker,
+                           auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
+        elif w - lm_list[8][1] >= left_x_buffer:
+            print('left')
+            publish.single(topic, 'left', hostname=broker,
+                           auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
+        time.sleep(sleep_time)
+    elif gesture == 'thumbs_up':
         publish.single(topic, 'volume_up', hostname=broker,
                        auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
         time.sleep(sleep_time)
-
-    elif gesture == 'index_middle_ring_pinky':
+    elif gesture == 'thumbs_down':
         publish.single(topic, 'volume_down', hostname=broker,
                        auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
         time.sleep(sleep_time)
-
     elif gesture == 'palm':
         if not play:
             play = True
@@ -125,7 +88,6 @@ while cap.isOpened():
             cv2.putText(image, "Play", (20, 70), cv2.FONT_HERSHEY_PLAIN, 3,
                         (0, 0, 0), 3)
             publish.single(topic, 'play', hostname=broker, auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
-
     elif gesture == 'upward_fist':
         if not pause:
             play = False
@@ -134,6 +96,44 @@ while cap.isOpened():
             cv2.putText(image, "Pause", (20, 70), cv2.FONT_HERSHEY_PLAIN, 3,
                         (0, 0, 0), 3)
             publish.single(topic, 'pause', hostname=broker, auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
+
+    # if gesture == 'index':
+    #     publish.single(topic, 'forward', hostname=broker,
+    #                        auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
+    #     time.sleep(sleep_time)
+    #
+    # elif gesture == 'index_middle':
+    #     publish.single(topic, 'rewind', hostname=broker,
+    #                        auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
+    #     time.sleep(sleep_time)
+    #
+    # elif gesture == 'index_middle_ring':
+    #     publish.single(topic, 'volume_up', hostname=broker,
+    #                    auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
+    #     time.sleep(sleep_time)
+    #
+    # elif gesture == 'index_middle_ring_pinky':
+    #     publish.single(topic, 'volume_down', hostname=broker,
+    #                    auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
+    #     time.sleep(sleep_time)
+    #
+    # elif gesture == 'palm':
+    #     if not play:
+    #         play = True
+    #         pause = False
+    #         stop = False
+    #         cv2.putText(image, "Play", (20, 70), cv2.FONT_HERSHEY_PLAIN, 3,
+    #                     (0, 0, 0), 3)
+    #         publish.single(topic, 'play', hostname=broker, auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
+    #
+    # elif gesture == 'upward_fist':
+    #     if not pause:
+    #         play = False
+    #         pause = True
+    #         stop = False
+    #         cv2.putText(image, "Pause", (20, 70), cv2.FONT_HERSHEY_PLAIN, 3,
+    #                     (0, 0, 0), 3)
+    #         publish.single(topic, 'pause', hostname=broker, auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
 
 
 
