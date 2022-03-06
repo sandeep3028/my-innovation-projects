@@ -25,8 +25,8 @@ pause = False
 stop = False
 power = False
 back = False
-volume_up_x_buffer = 200
-volume_down_x_buffer = 400
+# volume_up_x_buffer = 200
+# volume_down_x_buffer = 400
 
 right_x_buffer = 200
 left_x_buffer = 400
@@ -45,18 +45,23 @@ while cap.isOpened():
             publish.single(topic, 'power', hostname=broker,
                            auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
     elif gesture == 'pinky':
-        if not back:
-            back = True
-            publish.single(topic, 'back', hostname=broker,
+        h, w, c = image.shape
+        if w - lm_list[20][1] <= right_x_buffer:
+            print('Volume Up')
+            publish.single(topic, 'volume_up', hostname=broker,
+                           auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
+        elif w - lm_list[20][1] >= left_x_buffer:
+            print('Volume Down')
+            publish.single(topic, 'volume_down', hostname=broker,
                            auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
 
     elif gesture == 'index_middle':
         h, w, c = image.shape
-        if w - lm_list[8][1] <= volume_up_x_buffer:
+        if w - lm_list[8][1] <= right_x_buffer:
             print('forward')
             publish.single(topic, 'forward', hostname=broker,
                            auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
-        elif w - lm_list[8][1] >= volume_down_x_buffer:
+        elif w - lm_list[8][1] >= left_x_buffer:
             print('rewind')
             publish.single(topic, 'rewind', hostname=broker,
                            auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
@@ -71,14 +76,6 @@ while cap.isOpened():
             print('left')
             publish.single(topic, 'left', hostname=broker,
                            auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
-        time.sleep(sleep_time)
-    elif gesture == 'thumbs_up':
-        publish.single(topic, 'volume_up', hostname=broker,
-                       auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
-        time.sleep(sleep_time)
-    elif gesture == 'thumbs_down':
-        publish.single(topic, 'volume_down', hostname=broker,
-                       auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
         time.sleep(sleep_time)
     elif gesture == 'palm':
         if not play:
