@@ -46,6 +46,8 @@ while cap.isOpened():
                            auth={'username': "mqtt-user", 'password': "Mqtt.50786"})
     elif gesture == 'pinky':
         h, w, c = image.shape
+        print(image.shape)
+        print(w - lm_list[20][1])
         if w - lm_list[20][1] <= right_x_buffer:
             print('Volume Up')
             publish.single(topic, 'volume_up', hostname=broker,
